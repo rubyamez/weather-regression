@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Weather Regression (Temp °C)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Weather Regression (predict T °C)</h1>
+    <p>Model: <code>weather_regression.onnx</code> — features auto-built from <code>weather_scaler.json</code></p>
+
+    <form id="form">
+      <div id="inputs" class="grid"></div>
+      <button id="predictBtn" type="submit">Predict Temperature</button>
+    </form>
+
+    <section class="out">
+      <h2>Prediction</h2>
+      <div id="pred">—</div>
+      <details>
+        <summary>Debug</summary>
+        <pre id="debug">{}</pre>
+      </details>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
