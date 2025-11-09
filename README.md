@@ -47,14 +47,14 @@ Example — Sunny warm day:
 
 | Feature | Example Input                             |
 | ------- | ----------------------------------------- |
-| p       | 1012                                      |
-| Tpot    | 295                                       |
-| Tdew    | 12                                        |
-| rh      | 55                                        |
-| wv      | 3                                         |
-| wd      | 180                                       |
+| p       | 800                                       |
+| Tpot    | 100                                       |
+| Tdew    | 5                                         |
+| rh      | 40                                        |
+| wv      | 30                                        |
+| wd      | 50                                        |
 | others  | leave 0 if unsure (model will still work) |
 
 next, Click Predict Temperature
 
-You should see something around 18–25°C depending on the inputs.
+You should see something around 25-35°C depending on the inputs.
